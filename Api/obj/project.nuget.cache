@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "1e6wSxi0/0vMK5jWvsVmzIiCENEoazlTIF0+dXZW8fshtozhsHfTVroZHsJ9fGtm5hvNJYV99HPD+cPDnBScOw==",
+  "success": true,
+  "projectFilePath": "D:\\TetePizza\\api\\TetePizza.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\S2-PC00\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
