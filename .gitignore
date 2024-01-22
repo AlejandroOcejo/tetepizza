@@ -13,6 +13,16 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+#layers 
+/Business/bin/
+/Business/obj/
+/Models/bin/
+/Models/obj/
+/Data/bin/
+/Data/obj/
+/Api/bin/
+/Api/obj/
+
 # Mono auto generated files
 mono_crash.*
 
