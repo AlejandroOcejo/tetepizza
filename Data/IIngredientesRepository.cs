@@ -10,4 +10,8 @@ public interface IIngredientesRepository
     void Delete(int id);
 
     void Update(Ingredientes Ingredientes);
+
+    List<Ingredientes> GetPizzaIngredientes(int id);
+
+    void AddIngrediente(int pizzaId, int ingredienteId);
 }

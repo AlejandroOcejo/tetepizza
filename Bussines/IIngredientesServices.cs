@@ -9,4 +9,9 @@ public interface IIngredientesServices
     void Delete(int id);
 
     void Update(Ingredientes Ingredientes);
+
+    List<Ingredientes> GetPizzaIngredientes(int pizzaId);
+
+    void AddIngrediente(int pizzaId, int id);
+
 }

@@ -1,32 +1,51 @@
-namespace TetePizza.Bussines;
-using TetePizza.Models;
-using TetePizza.Data;
-
-public class IngredientesServices : IIngredientesServices
+namespace TetePizza.Bussines
 {
-    private IIngredientesRepository _repository;
+    using System.Collections.Generic;
+    using TetePizza.Models;
+    using TetePizza.Data;
 
-    public IngredientesServices(IIngredientesRepository repository)
+    public class IngredientesServices : IIngredientesServices
     {
-        _repository = repository;
-    }
+        private IIngredientesRepository _repository;
 
-    public List<Ingredientes> GetAll() => _repository.GetAll();
+        public IngredientesServices(IIngredientesRepository repository)
+        {
+            _repository = repository;
+        }
 
-    public Ingredientes? Get(int id) => _repository.Get(id);
+        public List<Ingredientes> GetAll()
+        {
+            return _repository.GetAll();
+        }
 
-    public void Add(Ingredientes Ingredientes)
-    {
-        _repository.Add(Ingredientes);
-    }
+        public Ingredientes Get(int ingredienteId)
+        {
+            return _repository.Get(ingredienteId);
+        }
 
-    public void Delete(int id)
-    {
-        _repository.Delete(id);
-    }
+        public void Add(Ingredientes ingredientes)
+        {
+            _repository.Add(ingredientes);
+        }
 
-    public void Update(Ingredientes Ingredientes)
-    {
-        _repository.Update(Ingredientes);
+        public void Delete(int id)
+        {
+            _repository.Delete(id);
+        }
+
+        public void Update(Ingredientes ingredientes)
+        {
+            _repository.Update(ingredientes);
+        }
+
+        public List<Ingredientes> GetPizzaIngredientes(int pizzaId)
+        {
+            return _repository.GetPizzaIngredientes(pizzaId);
+        }
+
+        public void AddIngrediente(int pizzaId, int ingredienteId)
+        {
+            _repository.AddIngrediente(pizzaId, ingredienteId);
+        }
     }
 }
