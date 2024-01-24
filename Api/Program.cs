@@ -10,10 +10,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IPizzaRepository, PizzaRepository>();
-builder.Services.AddScoped<IPizzaServices, PizzaServices>();
+var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 
-builder.Services.AddSingleton<IIngredientesRepository, IngredientesRepository>();
+// Use Scoped for both repositories
+builder.Services.AddScoped<IPizzaRepository, PizzaSqlRepository>(serviceProvider => new PizzaSqlRepository(connectionString));
+builder.Services.AddScoped<IIngredientesRepository, IngredientesRepository>();
+
+// Use Scoped for both services
+builder.Services.AddScoped<IPizzaServices, PizzaServices>();
 builder.Services.AddScoped<IIngredientesServices, IngredientesServices>();
 
 var app = builder.Build();
